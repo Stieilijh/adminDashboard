@@ -2,3 +2,8 @@
 *{
     font-family: "Roboto",sans-serif;
 }
+
+.iconsNavbar{
+    background-color: red;
+    filter:invert(1);
+}
