@@ -1,9 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
-    font-family: "Roboto",sans-serif;
+    font-family: 'Roboto',sans-serif;
+}
+body,html{
+    margin:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+}
+.sidebar{
+grid-row: 2/4;
+}
+.accountName{
+    font-weight: 700;
+}
+.searchbar{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    border-bottom: 3px solid lightgray;
+}
+.projects{
+    background-color: whitesmoke;
 }
 
 .iconsNavbar{
     background-color: red;
     filter:invert(1);
+}
+.accountInfo>img,.trendingpfp,#searchIcon{
+    width: 30px;
+    height:30px;
+}
+img.searchPfp{
+    width: 40px;
+    height: 40px;
+}
+#headerPfp{
+    width:50px;
+    height: 50px;
+}
+#InputDiv,.accountInfo{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo,.sidebar{
+    background-color: #007fff;
+    color:white;
+    font-weight: 700;
+    margin:0;
+}
+#headerSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#searchInput{
+    border: none;
+    border-radius: 12px;
+    background-color: lightgrey;
+    width:75%;
+    font-size: large;
 }
