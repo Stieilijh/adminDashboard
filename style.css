@@ -18,7 +18,7 @@ grid-row: 2/4;
 .searchbar{
     display: grid;
     grid-template-columns: 3fr 2fr;
-    border-bottom: 3px solid lightgray;
+    border-bottom: 3px solid gainsboro;
 }
 .projects{
     background-color: whitesmoke;
@@ -61,7 +61,20 @@ img.searchPfp{
 #searchInput{
     border: none;
     border-radius: 12px;
-    background-color: lightgrey;
+    background-color: gainsboro;
     width:75%;
     font-size: large;
 }
+#buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#buttons>*{
+    background-color: blue;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 16px;
+}
+
