@@ -40,7 +40,11 @@ grid-row: 2/4;
     background-color: #ff8000;
     filter:invert(1);
 }
-.accountInfo>img,.trendingpfp,#searchIcon{
+.trendingpfp{
+    width: 40px;
+    height: 40px;
+}
+.accountInfo>img,#searchIcon{
     width: 30px;
     height:30px;
 }
@@ -157,4 +161,14 @@ img.searchPfp{
     display: flex;
     flex-direction: column;
     gap:10px;
+}
+.trending{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+}
+.trending>.card>.desc{
+    opacity: 0.5;
 }
